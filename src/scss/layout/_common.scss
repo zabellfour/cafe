@@ -1,0 +1,12 @@
+.page-wrapper{
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  @include media('>=desktop') {
+    height: 100vh;
+    
+  }
+}
+.mark-green{
+  color:$green-light;
+}

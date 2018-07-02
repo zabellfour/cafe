@@ -1,52 +1,81 @@
 // Typography
-//
-// Base font styles for headings and links.
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6,
-.h {
-  font-family: map-deep-get($headings, 'fonts', 'headings-font-family');
-  font-weight: bold;
-  margin: 0 0 0.5em;
-  color: map-deep-get($headings, 'fonts', 'headings-color');
-}
 
 h1, .h1 {
-  font-size: map-deep-get($headings, 'sizes', 'h1-font-size');
+  @include media('<widescreen') {
+    font-size: 60px;
+  }
+  @include media('<desktop') {
+    font-size: 50px;
+  }
+  @include media('<tablet') {
+   font-size: 40px;
+  }
+  @include media('<phone') {
+    font-size: 30px;
+  }
 }
 
 h2, .h2 {
-  font-size: map-deep-get($headings, 'sizes', 'h2-font-size');
+  @include media('<widescreen') {
+    font-size: 35px;
+  }
+  @include media('<desktop') {
+    font-size: 30px;
+  }
+  @include media('<tablet') {
+   font-size: 25px;
+  }
+  @include media('<phone') {
+    font-size: 20px;
+  }
 }
 
 h3, .h3 {
-  font-size: map-deep-get($headings, 'sizes', 'h3-font-size');
+  @include media('<widescreen') {
+    font-size: 30px;
+  }
+  @include media('<desktop') {
+    font-size: 25px;
+  }
+  @include media('<tablet') {
+   font-size: 20px;
+  }
+  @include media('<phone') {
+    font-size: 18px;
+  }
 }
 
 h4, .h4 {
-  font-size: map-deep-get($headings, 'sizes', 'h4-font-size');
+  @include media('<widescreen') {
+    font-size: 24px;
+  }
+  @include media('<desktop') {
+    font-size: 22px;
+  }
+  @include media('<tablet') {
+   font-size: 18px;
+  }
+  @include media('<phone') {
+    font-size: 16px;
+  }
 }
 
 h5, .h5 {
-  font-size: map-deep-get($headings, 'sizes', 'h5-font-size');
+  @include media('<widescreen') {
+    font-size: 17px;
+  }
+  @include media('<desktop') {
+    font-size: 15px;
+  }
+  @include media('<tablet') {
+   font-size: 13px;
+  }
+  @include media('<phone') {
+    font-size: 12px;
+  }
 }
 
 h6, .h6 {
-  font-size: map-deep-get($headings, 'sizes', 'h6-font-size');
-}
-
-p {
-  margin: 0 0 1em;
-}
-
-a {
-  color: map-get($base, 'base-link-color');
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
+  
 }

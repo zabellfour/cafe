@@ -1,7 +1,10 @@
 // This is the main with imports from base folder.
 
-@import 'bootstrap-variables',
-		'variables',
-		'functions',
-		'mixins',
-		'helpers';
+@import 'fonts',
+				'variables',
+				'bootstrap-variables',
+				'functions',
+				'mixins',
+				'helpers';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

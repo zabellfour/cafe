@@ -1,1 +1,57 @@
-$body-bg:#000;
+
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+//colors
+$white:                 #fff;
+$gray:                  #F2F2F2;
+$dark:                  #333;
+$green-light:           #C7D300;
+$red-light:             #FF5959;
+$danger:                $red-light;
+$success:               $green-light;
+
+$body-bg:                 $gray;
+$body-color:              $dark;
+$link-color:              $dark;
+$link-hover-color:        lighten($link-color, 25%);
+$link-hover-decoration:   none;
+
+// Style p element.
+$paragraph-margin-bottom: 10px !default;
+$line-height-lg:          1.2 !default;
+$line-height-sm:          1.2 !default;
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:  'Raleway', sans-serif, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-oswald:      'Oswald', sans-serif, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-base:         $font-family-sans-serif;
+$line-height-base:         1.2;
+
+$h1-font-size:             78px;
+$h2-font-size:             40px;
+$h3-font-size:             35px;
+$h4-font-size:             26px;
+$h5-font-size:             19px;
+$h6-font-size:             16px;
+
+$headings-font-weight:     600;
+
+// Navbar
+$navbar-brand-padding-y:   30px;
+$navbar-toggler-font-size: 14px;
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-padding-y: 5px;
+$navbar-toggler-padding-x: 10px;
+$navbar-dark-active-color: $green-light;
+$navbar-light-active-color:$green-light;
+$navbar-light-color:       $dark;
+$navbar-dark-color:        $dark;
+$nav-link-padding-y:       0;
+$navbar-nav-link-padding-x:0;

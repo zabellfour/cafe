@@ -1,0 +1,94 @@
+.home-page {
+    padding-top: 65px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    &-top {
+        width: 100%;
+        margin-top: 0;
+    }
+    &-bottom {
+        width: 100%;
+        margin-top: auto;
+    }
+    @include media('>=phone') {
+        padding-top: 75px;
+    }
+    @include media('>=tablet') {
+        padding-top: 90px;
+    }
+    @include media('>=desktop') {
+        padding-top: 0;
+    }
+    .link-row {
+        display: flex;
+        justify-content: space-between;
+        font-size:9px;
+        text-transform: uppercase;
+        justify-content: space-between;
+        font-family: $font-family-oswald;
+        position: relative;
+        padding: 15px 0 20px;
+        @include media('>=tablet') {
+          font-size: 12px;
+        }
+        a {
+            color: $white;
+            padding-right: 10px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            @include animate(color);
+            &:hover{
+              color:$green-light;
+            }
+        }
+        .link-list {
+            display: flex;
+            font-size: 9px;
+            @include media('>=tablet') {
+              font-size: 10px;
+            }
+            @extend %listreset;
+            flex-wrap: wrap;
+            a {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    right: 4px;
+                    width: 1px;
+                    background-color: $white;
+                    bottom: 2px;
+                }
+                &:last-child:after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include media('>=desktop') {
+            position: relative;
+        }
+    }
+    .logo-row {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        @include media('>=widescreen') {
+            padding-top: 64px;
+        }
+        a {
+            margin-left: 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.info-title{
+  font-family: $font-family-oswald;
+  margin-bottom: 20px;
+  a{
+    color:inherit;
+  }
+  .tel-link{
+
+    font-size: 20px;
+    @include media('>=phone') {
+      font-size: 24px;
+    }
+    @include media('<tablet') {
+      
+    }
+  }
+}
+
+.top-row{
+  padding-top: 15px;
+  color:$white;
+  @include media('>=phone') {
+    padding-top: 20px;
+  }
+  @include media('>=tablet') {
+    padding-top: 35px;
+  }
+  a{
+    color: inherit;
+  }
+  @include media('>=phone') {
+    padding-top: 15px;
+  }
+  .icon-facebook{
+    font-size: 23px;
+    @include animate(opacity);
+    &:hover{
+      opacity: .8;
+    }
+    @include media('>=phone') {
+      font-size: 35px;
+    }
+  }
+}

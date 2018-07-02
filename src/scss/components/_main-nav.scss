@@ -1,0 +1,72 @@
+.main-nav {
+    font-family: $font-family-oswald;
+    font-size: 18px;
+    .bottom-row {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        @include media('>=phone') {
+          
+          right: 15px;
+
+        }
+        .btn {
+            color: $white;
+            font-size: 10px;
+            padding: 3px;
+            border-radius: 0 0 7px 7px;
+            margin-top: 8px;
+            @include media('>=phone') {
+          
+           
+              font-size: 12px;
+            }
+            @include media('>=widescreen') {
+              font-size: 17px;
+                padding: 7px 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        @include media('>=phone') {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .navbar-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @include media('>=desktop') {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    .nav-item {
+        padding: 1px 0;
+        text-align: right;
+        @include media('>=desktop') {
+            padding: 0 0 0 20px;
+        }
+    }
+    .navbar-brand {
+        width: 34px;
+        padding: 0;
+        @include media('>=phone') {
+            padding: 5px 0;
+        }
+        @include media('>=tablet') {
+            width: 40px;
+            padding: 10px 0;
+        }
+        @include media('>=widescreen') {
+            width: 78px;
+            padding: 30px 0;
+        }
+        img {
+            vertical-align: top;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+        .full-width-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            z-index: 0;
+            img {
+                height: 100%;
+                width: 100%;
+                max-width: none;
+                object-fit: cover;
+                vertical-align: top;
+            }
+            .owl-stage-outer {
+                height: 100%;
+            }
+            .owl-stage {
+                min-width: 9999px;
+                height: 100%;
+                display: flex;
+                justify-content: stretch;
+                .owl-item {
+                    &>div {
+                        width: 100%;
+                        transform: translateX(2px);
+                        display: flex;
+                        height: 100%;
+                    }
+                }
+            }
+        }
